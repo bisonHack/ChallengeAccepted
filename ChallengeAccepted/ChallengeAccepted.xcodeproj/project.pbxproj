@@ -3,19 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2EA3AE164D81D470CCD9CCCC /* Pods_ChallengeAccepted.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08D2151DE77EF09A1E9C495 /* Pods_ChallengeAccepted.framework */; };
 		83E59D33260515DA00A5ACAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E59D32260515DA00A5ACAD /* AppDelegate.swift */; };
 		83E59D35260515DA00A5ACAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E59D34260515DA00A5ACAD /* SceneDelegate.swift */; };
-		83E59D37260515DA00A5ACAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E59D36260515DA00A5ACAD /* ViewController.swift */; };
 		83E59D3A260515DA00A5ACAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E59D38260515DA00A5ACAD /* Main.storyboard */; };
 		83E59D3C260515E000A5ACAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83E59D3B260515E000A5ACAD /* Assets.xcassets */; };
 		83E59D3F260515E000A5ACAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E59D3D260515E000A5ACAD /* LaunchScreen.storyboard */; };
 		83E59D4A260515E100A5ACAD /* ChallengeAcceptedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E59D49260515E100A5ACAD /* ChallengeAcceptedTests.swift */; };
 		83E59D55260515E100A5ACAD /* ChallengeAcceptedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E59D54260515E100A5ACAD /* ChallengeAcceptedUITests.swift */; };
+		83E59D8C2605354D00A5ACAD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E59D8B2605354D00A5ACAD /* LoginViewController.swift */; };
 		9F194CBD114992EE2D3DEC00 /* Pods_ChallengeAcceptedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B56BE1EC462FB363EF7BED /* Pods_ChallengeAcceptedTests.framework */; };
 		A5417C62956974F67E94A37F /* Pods_ChallengeAccepted_ChallengeAcceptedUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F5266E247356E881A91A62 /* Pods_ChallengeAccepted_ChallengeAcceptedUITests.framework */; };
 /* End PBXBuildFile section */
@@ -44,7 +44,6 @@
 		83E59D2F260515DA00A5ACAD /* ChallengeAccepted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeAccepted.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E59D32260515DA00A5ACAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83E59D34260515DA00A5ACAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		83E59D36260515DA00A5ACAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		83E59D39260515DA00A5ACAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83E59D3B260515E000A5ACAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83E59D3E260515E000A5ACAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +54,7 @@
 		83E59D50260515E100A5ACAD /* ChallengeAcceptedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeAcceptedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E59D54260515E100A5ACAD /* ChallengeAcceptedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeAcceptedUITests.swift; sourceTree = "<group>"; };
 		83E59D56260515E100A5ACAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83E59D8B2605354D00A5ACAD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BAB3A94717C5CC980F6F4DF1 /* Pods-ChallengeAccepted-ChallengeAcceptedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeAccepted-ChallengeAcceptedUITests.release.xcconfig"; path = "Target Support Files/Pods-ChallengeAccepted-ChallengeAcceptedUITests/Pods-ChallengeAccepted-ChallengeAcceptedUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BC9D38024F2BAA11EB6EEBB4 /* Pods-ChallengeAcceptedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeAcceptedTests.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeAcceptedTests/Pods-ChallengeAcceptedTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C146E112B83C3A8DA8BC725D /* Pods-ChallengeAccepted-ChallengeAcceptedUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeAccepted-ChallengeAcceptedUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeAccepted-ChallengeAcceptedUITests/Pods-ChallengeAccepted-ChallengeAcceptedUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +101,6 @@
 				BC9D38024F2BAA11EB6EEBB4 /* Pods-ChallengeAcceptedTests.debug.xcconfig */,
 				164F7AD109B46B566BDA71FD /* Pods-ChallengeAcceptedTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -130,9 +129,11 @@
 		83E59D31260515DA00A5ACAD /* ChallengeAccepted */ = {
 			isa = PBXGroup;
 			children = (
+				83E59D8A2605352000A5ACAD /* Models */,
+				83E59D892605351800A5ACAD /* Views */,
+				83E59D882605350E00A5ACAD /* View Controllers */,
 				83E59D32260515DA00A5ACAD /* AppDelegate.swift */,
 				83E59D34260515DA00A5ACAD /* SceneDelegate.swift */,
-				83E59D36260515DA00A5ACAD /* ViewController.swift */,
 				83E59D38260515DA00A5ACAD /* Main.storyboard */,
 				83E59D3B260515E000A5ACAD /* Assets.xcassets */,
 				83E59D3D260515E000A5ACAD /* LaunchScreen.storyboard */,
@@ -157,6 +158,28 @@
 				83E59D56260515E100A5ACAD /* Info.plist */,
 			);
 			path = ChallengeAcceptedUITests;
+			sourceTree = "<group>";
+		};
+		83E59D882605350E00A5ACAD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				83E59D8B2605354D00A5ACAD /* LoginViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		83E59D892605351800A5ACAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		83E59D8A2605352000A5ACAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		EE06311DF1B2100679E9DA91 /* Frameworks */ = {
@@ -407,7 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83E59D37260515DA00A5ACAD /* ViewController.swift in Sources */,
+				83E59D8C2605354D00A5ACAD /* LoginViewController.swift in Sources */,
 				83E59D33260515DA00A5ACAD /* AppDelegate.swift in Sources */,
 				83E59D35260515DA00A5ACAD /* SceneDelegate.swift in Sources */,
 			);
