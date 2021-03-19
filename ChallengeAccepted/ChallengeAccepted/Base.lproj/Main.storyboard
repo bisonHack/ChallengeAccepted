@@ -23,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="209" y="-197"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="BTM-tj-RZX">
             <objects>
                 <viewController id="Cgq-kd-D0v" sceneMemberID="viewController">
@@ -33,7 +33,7 @@
                         <viewLayoutGuide key="safeArea" id="QAx-El-ZRc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="33Y-9M-hXw"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="33Y-9M-hXw"/>
                     <navigationItem key="navigationItem" id="O7K-C5-b6a"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ES7-lp-mef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -59,7 +59,7 @@
             </objects>
             <point key="canvasLocation" x="1693" y="556"/>
         </scene>
-        <!--Item-->
+        <!--WorkOut-->
         <scene sceneID="0nE-Cc-8NH">
             <objects>
                 <viewController id="1vQ-dg-RuE" sceneMemberID="viewController">
@@ -69,13 +69,13 @@
                         <viewLayoutGuide key="safeArea" id="gbU-mg-1Ju"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="NUg-om-Wws"/>
+                    <tabBarItem key="tabBarItem" title="WorkOut" id="NUg-om-Wws"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TDd-vo-kVK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1693" y="1435"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="gO4-YT-hP3">
             <objects>
                 <viewController id="PCL-H4-nkB" sceneMemberID="viewController">
@@ -85,7 +85,7 @@
                         <viewLayoutGuide key="safeArea" id="paM-Lb-EvO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="zWJ-ld-HJh"/>
+                    <tabBarItem key="tabBarItem" title="Profile" id="zWJ-ld-HJh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j9g-bw-3wf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
