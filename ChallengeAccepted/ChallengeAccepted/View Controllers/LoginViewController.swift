@@ -6,8 +6,12 @@
 //
 
 import UIKit
+import Parse
 
 class LoginViewController: UIViewController {
+    
+    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,7 +19,39 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    func emptyFieldAlert() {
+        let alert = UIAlertController(title: "Details Required", message: "Fill in empty fields", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func wrongUserAlert() {
+        let alert = UIAlertController(title: "Invalid Details", message: "The username or password is incorrect", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func loginUser(username: String, password: String) {
+        PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
+            if (user != nil){
+                self.performSegue(withIdentifier: "loginSegue", sender: nil);
+            } else{
+                self.wrongUserAlert()
+                print(username + " " + password)
+                print("Error: \(String(describing: error?.localizedDescription))")
+            }
+        }
+    }
+    
+    @IBAction func onTapLogin(_ sender: Any) {
+        let username = usernameField.text
+        let password = passwordField.text
+        if (username == "" || password == "") {
+            emptyFieldAlert()
+        }
+        loginUser(username: username!, password: password!)
+    }
+    
     /*
     // MARK: - Navigation
 
