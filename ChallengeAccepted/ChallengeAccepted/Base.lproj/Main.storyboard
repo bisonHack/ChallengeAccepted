@@ -33,7 +33,7 @@
                         <viewLayoutGuide key="safeArea" id="QAx-El-ZRc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="33Y-9M-hXw"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="HomeTab24px" id="33Y-9M-hXw"/>
                     <navigationItem key="navigationItem" id="O7K-C5-b6a"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ES7-lp-mef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -69,7 +69,7 @@
                         <viewLayoutGuide key="safeArea" id="gbU-mg-1Ju"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="WorkOut" id="NUg-om-Wws"/>
+                    <tabBarItem key="tabBarItem" title="WorkOut" image="WorkoutTab24px" id="NUg-om-Wws"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TDd-vo-kVK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,7 +85,7 @@
                         <viewLayoutGuide key="safeArea" id="paM-Lb-EvO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="zWJ-ld-HJh"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="ProfileTab24px" id="zWJ-ld-HJh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j9g-bw-3wf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,6 +93,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="HomeTab24px" width="24" height="24"/>
+        <image name="ProfileTab24px" width="24" height="24"/>
+        <image name="WorkoutTab24px" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
