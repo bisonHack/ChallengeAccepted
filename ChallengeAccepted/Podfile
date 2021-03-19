@@ -6,6 +6,7 @@ target 'ChallengeAccepted' do
   use_frameworks!
 
   # Pods for ChallengeAccepted
+    pod 'Parse'
 
   target 'ChallengeAcceptedTests' do
     inherit! :search_paths
