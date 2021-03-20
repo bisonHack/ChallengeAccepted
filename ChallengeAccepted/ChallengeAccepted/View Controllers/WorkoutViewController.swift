@@ -26,7 +26,7 @@ class WorkoutViewController: UIViewController,  UICollectionViewDelegate, UIColl
         
         editCollectionViewLayout()
 
-        self.workOuts = ["pushUps", "inclinePushUps", "declinePushUps", "squats", "pullUps", "sprints"]
+        self.workOuts = ["pushups2", "jumping", "stretch", "newsquat", "lunge", "sprint"]
         self.collectionView.reloadData()
 
     }
