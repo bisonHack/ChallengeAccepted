@@ -37,7 +37,6 @@ class LoginViewController: UIViewController {
                 self.performSegue(withIdentifier: "loginSegue", sender: nil);
             } else{
                 self.wrongUserAlert()
-                print(username + " " + password)
                 print("Error: \(String(describing: error?.localizedDescription))")
             }
         }

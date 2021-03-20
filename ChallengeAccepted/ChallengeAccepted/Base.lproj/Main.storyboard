@@ -86,23 +86,36 @@
                                                     <rect key="frame" x="20" y="11" width="374" height="47"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X98-Pq-Zdf" customClass="PFImageView">
-                                                            <rect key="frame" x="18" y="4" width="49.5" height="39"/>
+                                                            <rect key="frame" x="18" y="4" width="42" height="39"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="42" id="M34-ex-423"/>
+                                                                <constraint firstAttribute="height" constant="39" id="gpm-eJ-cgr"/>
+                                                            </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xgh-D8-wAm">
-                                                            <rect key="frame" x="82" y="13" width="109" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xgh-D8-wAm">
+                                                            <rect key="frame" x="77" y="13" width="112" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="challengeIcon30px" translatesAutoresizingMaskIntoConstraints="NO" id="dqH-aB-bt8">
+                                                            <rect key="frame" x="322" y="9" width="32" height="28"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="32" id="ERo-Bs-42U"/>
+                                                                <constraint firstAttribute="height" constant="28" id="X3j-22-Tg8"/>
+                                                            </constraints>
+                                                        </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="Xgh-D8-wAm" secondAttribute="trailing" constant="213" id="BLP-iw-G1g"/>
+                                                        <constraint firstAttribute="trailing" secondItem="dqH-aB-bt8" secondAttribute="trailing" constant="20" symbolic="YES" id="Hxb-4K-BIP"/>
                                                         <constraint firstAttribute="bottom" secondItem="X98-Pq-Zdf" secondAttribute="bottom" constant="4" id="KyY-k0-ctn"/>
                                                         <constraint firstItem="X98-Pq-Zdf" firstAttribute="top" secondItem="Vrz-1G-tPZ" secondAttribute="top" constant="4" id="XjV-3l-00H"/>
+                                                        <constraint firstItem="dqH-aB-bt8" firstAttribute="top" secondItem="Vrz-1G-tPZ" secondAttribute="top" constant="9" id="aNu-LY-XpT"/>
+                                                        <constraint firstItem="dqH-aB-bt8" firstAttribute="leading" secondItem="Xgh-D8-wAm" secondAttribute="trailing" constant="133" id="lif-wj-JK3"/>
                                                         <constraint firstAttribute="bottom" secondItem="Xgh-D8-wAm" secondAttribute="bottom" constant="13" id="pd8-A8-6Gk"/>
                                                         <constraint firstItem="Xgh-D8-wAm" firstAttribute="top" secondItem="Vrz-1G-tPZ" secondAttribute="top" constant="13" id="uma-as-gyQ"/>
-                                                        <constraint firstItem="Xgh-D8-wAm" firstAttribute="leading" secondItem="X98-Pq-Zdf" secondAttribute="trailing" constant="15" id="vR4-yP-vyq"/>
+                                                        <constraint firstItem="Xgh-D8-wAm" firstAttribute="leading" secondItem="X98-Pq-Zdf" secondAttribute="trailing" constant="17" id="vR4-yP-vyq"/>
                                                         <constraint firstItem="X98-Pq-Zdf" firstAttribute="leading" secondItem="Vrz-1G-tPZ" secondAttribute="leading" constant="18" id="wKF-c0-u92"/>
                                                     </constraints>
                                                 </view>
@@ -191,7 +204,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="znJ-rY-1WJ">
                                 <rect key="frame" x="0.0" y="209" width="414" height="687"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4z1-ke-Ud2">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4z1-ke-Ud2">
                                     <size key="itemSize" width="197" height="247"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -205,16 +218,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="197" height="247"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gew-HE-QeD">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gew-HE-QeD">
                                                     <rect key="frame" x="0.0" y="0.0" width="197" height="247"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Gew-HE-QeD" firstAttribute="leading" secondItem="isY-4q-ahW" secondAttribute="leading" id="1nR-Jw-VWf"/>
-                                                <constraint firstAttribute="bottom" secondItem="Gew-HE-QeD" secondAttribute="bottom" id="83Z-Ou-io4"/>
-                                                <constraint firstAttribute="trailing" secondItem="Gew-HE-QeD" secondAttribute="trailing" id="9Ax-dP-1Ms"/>
-                                                <constraint firstItem="Gew-HE-QeD" firstAttribute="top" secondItem="isY-4q-ahW" secondAttribute="top" id="NPO-sW-2Ws"/>
-                                            </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="197" height="247"/>
                                         <connections>
@@ -264,7 +272,9 @@
                             <constraint firstItem="ufc-H0-7FN" firstAttribute="leading" secondItem="gbU-mg-1Ju" secondAttribute="leading" constant="7" id="yvo-7d-wpZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="W.O.R.K.O.U.T.S" id="esh-bU-LWx"/>
+                    <navigationItem key="navigationItem" title="W.O.R.K.O.U.T.S" id="esh-bU-LWx">
+                        <barButtonItem key="rightBarButtonItem" image="challengeIcon30px" id="ukl-nq-NIA"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="znJ-rY-1WJ" id="XbH-j2-Gql"/>
                     </connections>
@@ -351,6 +361,7 @@
         <image name="HomeTab24px" width="24" height="24"/>
         <image name="ProfileTab24px" width="24" height="24"/>
         <image name="WorkoutTab24px" width="24" height="24"/>
+        <image name="challengeIcon30px" width="30" height="30"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
