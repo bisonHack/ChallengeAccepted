@@ -64,7 +64,7 @@ class WorkoutViewController: UIViewController,  UICollectionViewDelegate, UIColl
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if (self.workOuts[indexPath.row] == "squats") {
-            self.performSegue(withIdentifier: "randChallengeSegue", sender: nil)
+            self.performSegue(withIdentifier: "soloworkoutSegue", sender: nil)
         } else{
             self.notImplementedAlert()
         }
