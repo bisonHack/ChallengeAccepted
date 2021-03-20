@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2EA3AE164D81D470CCD9CCCC /* Pods_ChallengeAccepted.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08D2151DE77EF09A1E9C495 /* Pods_ChallengeAccepted.framework */; };
+		8334037C2605766B00172A91 /* WorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334037B2605766B00172A91 /* WorkoutCell.swift */; };
 		83E59D33260515DA00A5ACAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E59D32260515DA00A5ACAD /* AppDelegate.swift */; };
 		83E59D35260515DA00A5ACAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E59D34260515DA00A5ACAD /* SceneDelegate.swift */; };
 		83E59D3A260515DA00A5ACAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E59D38260515DA00A5ACAD /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 		83E59D8C2605354D00A5ACAD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E59D8B2605354D00A5ACAD /* LoginViewController.swift */; };
 		83E59D91260545C700A5ACAD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E59D90260545C700A5ACAD /* HomeViewController.swift */; };
 		83E59D9626054CB800A5ACAD /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E59D9526054CB800A5ACAD /* ChatCell.swift */; };
+		83E59DA526056DF000A5ACAD /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E59DA426056DF000A5ACAD /* WorkoutViewController.swift */; };
 		9F194CBD114992EE2D3DEC00 /* Pods_ChallengeAcceptedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B56BE1EC462FB363EF7BED /* Pods_ChallengeAcceptedTests.framework */; };
 		A5417C62956974F67E94A37F /* Pods_ChallengeAccepted_ChallengeAcceptedUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F5266E247356E881A91A62 /* Pods_ChallengeAccepted_ChallengeAcceptedUITests.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +45,7 @@
 		164F7AD109B46B566BDA71FD /* Pods-ChallengeAcceptedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeAcceptedTests.release.xcconfig"; path = "Target Support Files/Pods-ChallengeAcceptedTests/Pods-ChallengeAcceptedTests.release.xcconfig"; sourceTree = "<group>"; };
 		4D22E47235D4BAE6F9FEFFB0 /* Pods-ChallengeAccepted.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeAccepted.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeAccepted/Pods-ChallengeAccepted.debug.xcconfig"; sourceTree = "<group>"; };
 		81A62B8C7444B02575FDE1ED /* Pods-ChallengeAccepted.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeAccepted.release.xcconfig"; path = "Target Support Files/Pods-ChallengeAccepted/Pods-ChallengeAccepted.release.xcconfig"; sourceTree = "<group>"; };
+		8334037B2605766B00172A91 /* WorkoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCell.swift; sourceTree = "<group>"; };
 		83E59D2F260515DA00A5ACAD /* ChallengeAccepted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeAccepted.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E59D32260515DA00A5ACAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83E59D34260515DA00A5ACAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +62,7 @@
 		83E59D8B2605354D00A5ACAD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		83E59D90260545C700A5ACAD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		83E59D9526054CB800A5ACAD /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		83E59DA426056DF000A5ACAD /* WorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
 		BAB3A94717C5CC980F6F4DF1 /* Pods-ChallengeAccepted-ChallengeAcceptedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeAccepted-ChallengeAcceptedUITests.release.xcconfig"; path = "Target Support Files/Pods-ChallengeAccepted-ChallengeAcceptedUITests/Pods-ChallengeAccepted-ChallengeAcceptedUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BC9D38024F2BAA11EB6EEBB4 /* Pods-ChallengeAcceptedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeAcceptedTests.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeAcceptedTests/Pods-ChallengeAcceptedTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C146E112B83C3A8DA8BC725D /* Pods-ChallengeAccepted-ChallengeAcceptedUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeAccepted-ChallengeAcceptedUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeAccepted-ChallengeAcceptedUITests/Pods-ChallengeAccepted-ChallengeAcceptedUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +173,7 @@
 			children = (
 				83E59D8B2605354D00A5ACAD /* LoginViewController.swift */,
 				83E59D90260545C700A5ACAD /* HomeViewController.swift */,
+				83E59DA426056DF000A5ACAD /* WorkoutViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				83E59D9526054CB800A5ACAD /* ChatCell.swift */,
+				8334037B2605766B00172A91 /* WorkoutCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -436,6 +442,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83E59DA526056DF000A5ACAD /* WorkoutViewController.swift in Sources */,
+				8334037C2605766B00172A91 /* WorkoutCell.swift in Sources */,
 				83E59D8C2605354D00A5ACAD /* LoginViewController.swift in Sources */,
 				83E59D33260515DA00A5ACAD /* AppDelegate.swift in Sources */,
 				83E59D35260515DA00A5ACAD /* SceneDelegate.swift in Sources */,

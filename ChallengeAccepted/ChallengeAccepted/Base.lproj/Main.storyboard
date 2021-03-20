@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -179,21 +180,98 @@
             </objects>
             <point key="canvasLocation" x="1693" y="531"/>
         </scene>
-        <!--View Controller-->
+        <!--W.O.R.K.O.U.T.S-->
         <scene sceneID="0nE-Cc-8NH">
             <objects>
-                <viewController id="1vQ-dg-RuE" sceneMemberID="viewController">
+                <viewController id="1vQ-dg-RuE" customClass="WorkoutViewController" customModule="ChallengeAccepted" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7PL-Wp-85R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="znJ-rY-1WJ">
+                                <rect key="frame" x="0.0" y="209" width="414" height="687"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4z1-ke-Ud2">
+                                    <size key="itemSize" width="197" height="247"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WorkoutCell" id="4gO-tG-fsK" customClass="WorkoutCell" customModule="ChallengeAccepted" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="197" height="247"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="isY-4q-ahW">
+                                            <rect key="frame" x="0.0" y="0.0" width="197" height="247"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gew-HE-QeD">
+                                                    <rect key="frame" x="0.0" y="0.0" width="197" height="247"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Gew-HE-QeD" firstAttribute="leading" secondItem="isY-4q-ahW" secondAttribute="leading" id="1nR-Jw-VWf"/>
+                                                <constraint firstAttribute="bottom" secondItem="Gew-HE-QeD" secondAttribute="bottom" id="83Z-Ou-io4"/>
+                                                <constraint firstAttribute="trailing" secondItem="Gew-HE-QeD" secondAttribute="trailing" id="9Ax-dP-1Ms"/>
+                                                <constraint firstItem="Gew-HE-QeD" firstAttribute="top" secondItem="isY-4q-ahW" secondAttribute="top" id="NPO-sW-2Ws"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="197" height="247"/>
+                                        <connections>
+                                            <outlet property="workoutImage" destination="Gew-HE-QeD" id="dfG-N3-UAd"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sb-Q2-OgO">
+                                <rect key="frame" x="7" y="103" width="198" height="41.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="WorkOuts">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="Cochin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufc-H0-7FN">
+                                <rect key="frame" x="7" y="156" width="387" height="28"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Choose a work out type...">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="24" name="Cochin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gbU-mg-1Ju"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gbU-mg-1Ju" firstAttribute="trailing" secondItem="ufc-H0-7FN" secondAttribute="trailing" constant="20" id="4Pc-u1-2r5"/>
+                            <constraint firstItem="gbU-mg-1Ju" firstAttribute="trailing" secondItem="9sb-Q2-OgO" secondAttribute="trailing" constant="209" id="AdU-zz-70B"/>
+                            <constraint firstItem="ufc-H0-7FN" firstAttribute="top" secondItem="9sb-Q2-OgO" secondAttribute="bottom" constant="11.5" id="FCD-BM-pKr"/>
+                            <constraint firstItem="9sb-Q2-OgO" firstAttribute="leading" secondItem="gbU-mg-1Ju" secondAttribute="leading" constant="7" id="Rgu-oC-xuQ"/>
+                            <constraint firstItem="9sb-Q2-OgO" firstAttribute="top" secondItem="gbU-mg-1Ju" secondAttribute="top" constant="15" id="aKx-cQ-R8C"/>
+                            <constraint firstItem="znJ-rY-1WJ" firstAttribute="top" secondItem="ufc-H0-7FN" secondAttribute="bottom" constant="25" id="cou-pP-g5w"/>
+                            <constraint firstItem="znJ-rY-1WJ" firstAttribute="leading" secondItem="gbU-mg-1Ju" secondAttribute="leading" id="duH-TF-aZm"/>
+                            <constraint firstAttribute="bottom" secondItem="znJ-rY-1WJ" secondAttribute="bottom" id="jiu-lt-K03"/>
+                            <constraint firstItem="znJ-rY-1WJ" firstAttribute="trailing" secondItem="gbU-mg-1Ju" secondAttribute="trailing" id="rh8-N7-f3h"/>
+                            <constraint firstItem="ufc-H0-7FN" firstAttribute="leading" secondItem="gbU-mg-1Ju" secondAttribute="leading" constant="7" id="yvo-7d-wpZ"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="esh-bU-LWx"/>
+                    <navigationItem key="navigationItem" title="W.O.R.K.O.U.T.S" id="esh-bU-LWx"/>
+                    <connections>
+                        <outlet property="collectionView" destination="znJ-rY-1WJ" id="XbH-j2-Gql"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TDd-vo-kVK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1693" y="2506"/>
+            <point key="canvasLocation" x="1692.753623188406" y="2505.1339285714284"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gO4-YT-hP3">
