@@ -17,14 +17,11 @@ class SoloWorkoutViewController: UIViewController, ConfigurationViewControllerDe
     
     var squatCounter = 0 // Counter for Squats
     var timeCounter = UserDefaults.standard.integer(forKey: "Time") // Counter for Time
-    var height = UserDefaults.standard.double(forKey: "Height")
-    var noInstructions = UserDefaults.standard.bool(forKey: "Instruction")
     var previous = [Float]()    // Previous data of squats
     var current = [Float]() // Current Squatting data
     var previous_action: String = "r"    // Current State of body
     var timer = Timer() // Timer For Squat App
     var working = false
-    var heightEstimator = 5.58
     
     private let videoCapture = VideoCapture()
     private var poseNet: PoseNet!
@@ -79,7 +76,6 @@ class SoloWorkoutViewController: UIViewController, ConfigurationViewControllerDe
             timerType()
         } else{
             self.squatCounter = 0
-            self.timeCounter = UserDefaults.standard.integer(forKey: "Time")
             self.startButton.setTitle("Start", for: .normal)
             self.startButton.backgroundColor = UIColor.green
             self.previous = [Float]()
@@ -251,6 +247,7 @@ class SoloWorkoutViewController: UIViewController, ConfigurationViewControllerDe
                            check = false
                        }
                    }
+
                    
                    if check{
                        if !self.previous.isEmpty { //If previous points do exist

@@ -36,6 +36,11 @@
 		833403C326058BD100172A91 /* PoseNetMobileNet075S16FP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 833403AA26058BD100172A91 /* PoseNetMobileNet075S16FP16.mlmodel */; };
 		833403C82605956800172A91 /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833403C72605956800172A91 /* ChallengeViewController.swift */; };
 		833403D02605CBA100172A91 /* SoloWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833403CF2605CBA100172A91 /* SoloWorkoutViewController.swift */; };
+		839802D22605E142002FD009 /* Food101.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 839802D12605E142002FD009 /* Food101.mlmodel */; };
+		839802D72605E154002FD009 /* UIImage+PixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839802D62605E154002FD009 /* UIImage+PixelBuffer.swift */; };
+		839802DC2605E35C002FD009 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839802DB2605E35C002FD009 /* FoodViewController.swift */; };
+		839802E12605E775002FD009 /* NutritionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839802E02605E775002FD009 /* NutritionViewController.swift */; };
+		839802E62605EA4C002FD009 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839802E52605EA4C002FD009 /* FoodCell.swift */; };
 		83E59D33260515DA00A5ACAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E59D32260515DA00A5ACAD /* AppDelegate.swift */; };
 		83E59D35260515DA00A5ACAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E59D34260515DA00A5ACAD /* SceneDelegate.swift */; };
 		83E59D3A260515DA00A5ACAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E59D38260515DA00A5ACAD /* Main.storyboard */; };
@@ -100,6 +105,11 @@
 		833403AA26058BD100172A91 /* PoseNetMobileNet075S16FP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PoseNetMobileNet075S16FP16.mlmodel; sourceTree = "<group>"; };
 		833403C72605956800172A91 /* ChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
 		833403CF2605CBA100172A91 /* SoloWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloWorkoutViewController.swift; sourceTree = "<group>"; };
+		839802D12605E142002FD009 /* Food101.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Food101.mlmodel; sourceTree = "<group>"; };
+		839802D62605E154002FD009 /* UIImage+PixelBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+PixelBuffer.swift"; sourceTree = "<group>"; };
+		839802DB2605E35C002FD009 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		839802E02605E775002FD009 /* NutritionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionViewController.swift; sourceTree = "<group>"; };
+		839802E52605EA4C002FD009 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
 		83E59D2F260515DA00A5ACAD /* ChallengeAccepted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeAccepted.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E59D32260515DA00A5ACAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83E59D34260515DA00A5ACAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -270,6 +280,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		839802D02605E106002FD009 /* FoodML */ = {
+			isa = PBXGroup;
+			children = (
+				839802D62605E154002FD009 /* UIImage+PixelBuffer.swift */,
+				839802D12605E142002FD009 /* Food101.mlmodel */,
+			);
+			path = FoodML;
+			sourceTree = "<group>";
+		};
 		83E59D26260515DA00A5ACAD = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +353,8 @@
 				83E59DA426056DF000A5ACAD /* WorkoutViewController.swift */,
 				833403C72605956800172A91 /* ChallengeViewController.swift */,
 				833403CF2605CBA100172A91 /* SoloWorkoutViewController.swift */,
+				839802DB2605E35C002FD009 /* FoodViewController.swift */,
+				839802E02605E775002FD009 /* NutritionViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -343,6 +364,7 @@
 			children = (
 				83E59D9526054CB800A5ACAD /* ChatCell.swift */,
 				8334037B2605766B00172A91 /* WorkoutCell.swift */,
+				839802E52605EA4C002FD009 /* FoodCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -350,6 +372,7 @@
 		83E59D8A2605352000A5ACAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				839802D02605E106002FD009 /* FoodML */,
 				8334038826058BD100172A91 /* ApplePoseEstimationModel */,
 			);
 			path = Models;
@@ -610,6 +633,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839802D72605E154002FD009 /* UIImage+PixelBuffer.swift in Sources */,
 				83E59DA526056DF000A5ACAD /* WorkoutViewController.swift in Sources */,
 				833403B926058BD100172A91 /* VideoCapture.swift in Sources */,
 				833403BE26058BD100172A91 /* PoseBuilder.swift in Sources */,
@@ -621,16 +645,20 @@
 				833403C126058BD100172A91 /* PoseNet.swift in Sources */,
 				833403B226058BD100172A91 /* PoseImageView.swift in Sources */,
 				833403BB26058BD100172A91 /* PoseBuilder+Multiple.swift in Sources */,
+				839802E12605E775002FD009 /* NutritionViewController.swift in Sources */,
 				833403B426058BD100172A91 /* PopOverModalViewController.swift in Sources */,
 				833403B826058BD100172A91 /* AVCaptureVideoOrientation+Extension.swift in Sources */,
 				833403C326058BD100172A91 /* PoseNetMobileNet075S16FP16.mlmodel in Sources */,
 				83E59D33260515DA00A5ACAD /* AppDelegate.swift in Sources */,
+				839802E62605EA4C002FD009 /* FoodCell.swift in Sources */,
+				839802DC2605E35C002FD009 /* FoodViewController.swift in Sources */,
 				833403B326058BD100172A91 /* ConfigurationViewController.swift in Sources */,
 				833403BA26058BD100172A91 /* Joint.swift in Sources */,
 				833403BC26058BD100172A91 /* PoseBuilder+Single.swift in Sources */,
 				83E59D35260515DA00A5ACAD /* SceneDelegate.swift in Sources */,
 				83E59D9626054CB800A5ACAD /* ChatCell.swift in Sources */,
 				833403D02605CBA100172A91 /* SoloWorkoutViewController.swift in Sources */,
+				839802D22605E142002FD009 /* Food101.mlmodel in Sources */,
 				833403B726058BD100172A91 /* CGImage+Extension.swift in Sources */,
 				833403BD26058BD100172A91 /* Pose.swift in Sources */,
 				833403B526058BD100172A91 /* GradientOverlayView.swift in Sources */,
