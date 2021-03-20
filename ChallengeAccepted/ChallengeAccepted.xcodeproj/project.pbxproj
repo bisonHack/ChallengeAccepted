@@ -34,6 +34,7 @@
 		833403C126058BD100172A91 /* PoseNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833403A826058BD100172A91 /* PoseNet.swift */; };
 		833403C226058BD100172A91 /* PoseNetInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833403A926058BD100172A91 /* PoseNetInput.swift */; };
 		833403C326058BD100172A91 /* PoseNetMobileNet075S16FP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 833403AA26058BD100172A91 /* PoseNetMobileNet075S16FP16.mlmodel */; };
+		833403C82605956800172A91 /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833403C72605956800172A91 /* ChallengeViewController.swift */; };
 		83E59D33260515DA00A5ACAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E59D32260515DA00A5ACAD /* AppDelegate.swift */; };
 		83E59D35260515DA00A5ACAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E59D34260515DA00A5ACAD /* SceneDelegate.swift */; };
 		83E59D3A260515DA00A5ACAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E59D38260515DA00A5ACAD /* Main.storyboard */; };
@@ -96,6 +97,7 @@
 		833403A826058BD100172A91 /* PoseNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseNet.swift; sourceTree = "<group>"; };
 		833403A926058BD100172A91 /* PoseNetInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseNetInput.swift; sourceTree = "<group>"; };
 		833403AA26058BD100172A91 /* PoseNetMobileNet075S16FP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PoseNetMobileNet075S16FP16.mlmodel; sourceTree = "<group>"; };
+		833403C72605956800172A91 /* ChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
 		83E59D2F260515DA00A5ACAD /* ChallengeAccepted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeAccepted.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E59D32260515DA00A5ACAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83E59D34260515DA00A5ACAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 				83E59D8B2605354D00A5ACAD /* LoginViewController.swift */,
 				83E59D90260545C700A5ACAD /* HomeViewController.swift */,
 				83E59DA426056DF000A5ACAD /* WorkoutViewController.swift */,
+				833403C72605956800172A91 /* ChallengeViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -628,6 +631,7 @@
 				833403BD26058BD100172A91 /* Pose.swift in Sources */,
 				833403B526058BD100172A91 /* GradientOverlayView.swift in Sources */,
 				83E59D91260545C700A5ACAD /* HomeViewController.swift in Sources */,
+				833403C82605956800172A91 /* ChallengeViewController.swift in Sources */,
 				833403C026058BD100172A91 /* PoseNetOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
