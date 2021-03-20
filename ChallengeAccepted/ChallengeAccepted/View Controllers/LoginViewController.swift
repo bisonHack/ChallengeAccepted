@@ -32,11 +32,12 @@ class LoginViewController: UIViewController {
     }
     
     func loginUser(username: String, password: String) {
-        PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
+        PFUser.logInWithUsername(inBackground: "george", password: "george") { (user, error) in
             if (user != nil){
                 self.performSegue(withIdentifier: "loginSegue", sender: nil);
             } else{
                 self.wrongUserAlert()
+                print(username + " " + password)
                 print("Error: \(String(describing: error?.localizedDescription))")
             }
         }
@@ -51,6 +52,9 @@ class LoginViewController: UIViewController {
         loginUser(username: username!, password: password!)
     }
     
+    @IBAction func didTapScreen(_ sender: Any) {
+        self.view.endEditing(true)
+    }
     /*
     // MARK: - Navigation
 

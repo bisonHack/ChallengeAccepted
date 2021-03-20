@@ -35,6 +35,7 @@
 		833403C226058BD100172A91 /* PoseNetInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833403A926058BD100172A91 /* PoseNetInput.swift */; };
 		833403C326058BD100172A91 /* PoseNetMobileNet075S16FP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 833403AA26058BD100172A91 /* PoseNetMobileNet075S16FP16.mlmodel */; };
 		833403C82605956800172A91 /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833403C72605956800172A91 /* ChallengeViewController.swift */; };
+		833403D02605CBA100172A91 /* SoloWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833403CF2605CBA100172A91 /* SoloWorkoutViewController.swift */; };
 		83E59D33260515DA00A5ACAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E59D32260515DA00A5ACAD /* AppDelegate.swift */; };
 		83E59D35260515DA00A5ACAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E59D34260515DA00A5ACAD /* SceneDelegate.swift */; };
 		83E59D3A260515DA00A5ACAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E59D38260515DA00A5ACAD /* Main.storyboard */; };
@@ -98,6 +99,7 @@
 		833403A926058BD100172A91 /* PoseNetInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseNetInput.swift; sourceTree = "<group>"; };
 		833403AA26058BD100172A91 /* PoseNetMobileNet075S16FP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PoseNetMobileNet075S16FP16.mlmodel; sourceTree = "<group>"; };
 		833403C72605956800172A91 /* ChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
+		833403CF2605CBA100172A91 /* SoloWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloWorkoutViewController.swift; sourceTree = "<group>"; };
 		83E59D2F260515DA00A5ACAD /* ChallengeAccepted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeAccepted.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E59D32260515DA00A5ACAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83E59D34260515DA00A5ACAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -331,6 +333,7 @@
 				83E59D90260545C700A5ACAD /* HomeViewController.swift */,
 				83E59DA426056DF000A5ACAD /* WorkoutViewController.swift */,
 				833403C72605956800172A91 /* ChallengeViewController.swift */,
+				833403CF2605CBA100172A91 /* SoloWorkoutViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -627,6 +630,7 @@
 				833403BC26058BD100172A91 /* PoseBuilder+Single.swift in Sources */,
 				83E59D35260515DA00A5ACAD /* SceneDelegate.swift in Sources */,
 				83E59D9626054CB800A5ACAD /* ChatCell.swift in Sources */,
+				833403D02605CBA100172A91 /* SoloWorkoutViewController.swift in Sources */,
 				833403B726058BD100172A91 /* CGImage+Extension.swift in Sources */,
 				833403BD26058BD100172A91 /* Pose.swift in Sources */,
 				833403B526058BD100172A91 /* GradientOverlayView.swift in Sources */,
@@ -810,6 +814,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7DF23RMRWS;
 				INFOPLIST_FILE = ChallengeAccepted/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -829,6 +834,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7DF23RMRWS;
 				INFOPLIST_FILE = ChallengeAccepted/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
