@@ -37,6 +37,8 @@
 		833403C326058BD100172A91 /* PoseNetMobileNet075S16FP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 833403AA26058BD100172A91 /* PoseNetMobileNet075S16FP16.mlmodel */; };
 		833403C82605956800172A91 /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833403C72605956800172A91 /* ChallengeViewController.swift */; };
 		833403D02605CBA100172A91 /* SoloWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833403CF2605CBA100172A91 /* SoloWorkoutViewController.swift */; };
+		833816A92622674100823F0B /* Rep60sViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833816A82622674100823F0B /* Rep60sViewController.swift */; };
+		833816AE2622678E00823F0B /* Rep100ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833816AD2622678E00823F0B /* Rep100ViewController.swift */; };
 		8339DF1026224DBF004866B2 /* ModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8339DF0F26224DBF004866B2 /* ModeViewController.swift */; };
 		83E59D33260515DA00A5ACAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E59D32260515DA00A5ACAD /* AppDelegate.swift */; };
 		83E59D35260515DA00A5ACAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E59D34260515DA00A5ACAD /* SceneDelegate.swift */; };
@@ -103,6 +105,8 @@
 		833403AA26058BD100172A91 /* PoseNetMobileNet075S16FP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PoseNetMobileNet075S16FP16.mlmodel; sourceTree = "<group>"; };
 		833403C72605956800172A91 /* ChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
 		833403CF2605CBA100172A91 /* SoloWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloWorkoutViewController.swift; sourceTree = "<group>"; };
+		833816A82622674100823F0B /* Rep60sViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rep60sViewController.swift; sourceTree = "<group>"; };
+		833816AD2622678E00823F0B /* Rep100ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rep100ViewController.swift; sourceTree = "<group>"; };
 		8339DF0F26224DBF004866B2 /* ModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeViewController.swift; sourceTree = "<group>"; };
 		83E59D2F260515DA00A5ACAD /* ChallengeAccepted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeAccepted.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E59D32260515DA00A5ACAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -340,6 +344,8 @@
 				833403C72605956800172A91 /* ChallengeViewController.swift */,
 				833403CF2605CBA100172A91 /* SoloWorkoutViewController.swift */,
 				8339DF0F26224DBF004866B2 /* ModeViewController.swift */,
+				833816A82622674100823F0B /* Rep60sViewController.swift */,
+				833816AD2622678E00823F0B /* Rep100ViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -636,10 +642,12 @@
 				833403B326058BD100172A91 /* ConfigurationViewController.swift in Sources */,
 				833403BA26058BD100172A91 /* Joint.swift in Sources */,
 				833403BC26058BD100172A91 /* PoseBuilder+Single.swift in Sources */,
+				833816AE2622678E00823F0B /* Rep100ViewController.swift in Sources */,
 				83E59D35260515DA00A5ACAD /* SceneDelegate.swift in Sources */,
 				83E59D9626054CB800A5ACAD /* ChatCell.swift in Sources */,
 				833403D02605CBA100172A91 /* SoloWorkoutViewController.swift in Sources */,
 				833403B726058BD100172A91 /* CGImage+Extension.swift in Sources */,
+				833816A92622674100823F0B /* Rep60sViewController.swift in Sources */,
 				833403BD26058BD100172A91 /* Pose.swift in Sources */,
 				833403B526058BD100172A91 /* GradientOverlayView.swift in Sources */,
 				83E59D91260545C700A5ACAD /* HomeViewController.swift in Sources */,

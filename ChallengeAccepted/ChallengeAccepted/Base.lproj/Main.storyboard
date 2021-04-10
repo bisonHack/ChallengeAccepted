@@ -456,6 +456,8 @@
                         <outlet property="maxRepsBtn" destination="3AE-Eu-5Bm" id="oey-BL-NHG"/>
                         <outlet property="raceBtn" destination="h6q-in-NvL" id="iM7-QU-RIx"/>
                         <outlet property="soloBtn" destination="COz-gJ-oC1" id="qM4-Uz-Gfk"/>
+                        <segue destination="yNc-xs-rAu" kind="presentation" identifier="60sRep" modalPresentationStyle="fullScreen" id="oA3-YK-ahi"/>
+                        <segue destination="2ly-Fp-EBM" kind="presentation" identifier="100Reps" modalPresentationStyle="fullScreen" id="vEO-dz-AQd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ic8-le-IF1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -617,12 +619,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JEB-We-8Ou" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1692" y="4103"/>
+            <point key="canvasLocation" x="363" y="3353"/>
         </scene>
-        <!--View Controller-->
+        <!--Rep6 0s View Controller-->
         <scene sceneID="KvM-k1-QMV">
             <objects>
-                <viewController id="yNc-xs-rAu" sceneMemberID="viewController">
+                <viewController id="yNc-xs-rAu" customClass="Rep60sViewController" customModule="ChallengeAccepted" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ybm-VL-hbA">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -780,12 +782,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mMS-uE-enR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="207" y="4103"/>
+            <point key="canvasLocation" x="683" y="4179"/>
         </scene>
-        <!--View Controller-->
+        <!--Rep100 View Controller-->
         <scene sceneID="uux-0t-5hG">
             <objects>
-                <viewController id="2ly-Fp-EBM" sceneMemberID="viewController">
+                <viewController id="2ly-Fp-EBM" customClass="Rep100ViewController" customModule="ChallengeAccepted" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CGk-9S-TRc">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -968,10 +970,16 @@
                         <viewLayoutGuide key="safeArea" id="r1y-hq-vJR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="zOL-Rs-mxn" id="H3a-KZ-1x5"/>
+                        <outlet property="previewImageView" destination="rhg-7C-aR5" id="dR1-wu-MQV"/>
+                        <outlet property="randCounterLabel" destination="gib-48-PBX" id="KoR-gF-8Nr"/>
+                        <outlet property="randPreviewImageView" destination="f4y-o3-Iiq" id="3bN-vU-nxU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0LG-TY-ThE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2963.5514018691588" y="4103.4557235421171"/>
+            <point key="canvasLocation" x="2680" y="4179"/>
         </scene>
         <!--Home-->
         <scene sceneID="FQG-Nu-mc6">

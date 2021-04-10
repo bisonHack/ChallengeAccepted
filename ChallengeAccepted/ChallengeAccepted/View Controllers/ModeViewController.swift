@@ -23,6 +23,7 @@ class ModeViewController: UIViewController {
     var timeTrack = 0
     var timer = Timer()
     var activityView: UIActivityIndicatorView!
+    var segueType = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,7 +92,7 @@ class ModeViewController: UIViewController {
                     self.randUser = (objects![0] as! PFUser)
                     self.timer.invalidate()
                     self.activityView.stopAnimating()
-                    self.performSegue(withIdentifier: "randChallengeSegue", sender: nil)
+                    self.performSegue(withIdentifier: self.segueType, sender: nil)
                 } else{
                     if (self.timeTrack == 20){
                         self.timer.invalidate()
@@ -132,10 +133,12 @@ class ModeViewController: UIViewController {
     
     
     @IBAction func didTapMaxRep(_ sender: Any) {
+        self.segueType = "60sRep"
         looking()
     }
     
     @IBAction func didTapRace(_ sender: Any) {
+        self.segueType = "100Reps"
         looking()
     }
     
@@ -148,8 +151,9 @@ class ModeViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if (segue.identifier == self.segueType){
+                    
+                }
     }
 
 
