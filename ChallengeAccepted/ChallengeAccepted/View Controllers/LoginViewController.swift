@@ -32,9 +32,12 @@ class LoginViewController: UIViewController {
     }
     
     func loginUser(username: String, password: String) {
-        PFUser.logInWithUsername(inBackground: "george", password: "george") { (user, error) in
+//        PFUser.logInWithUsername(inBackground: "george", password: "george") { (user, error) in
+        let username = usernameField.text!
+        let password = passwordField.text!
+        PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
             if (user != nil){
-                self.performSegue(withIdentifier: "loginSegue", sender: nil);
+                self.performSegue(withIdentifier: "secondSegue", sender: nil);
             } else{
                 self.wrongUserAlert()
                 print(username + " " + password)
