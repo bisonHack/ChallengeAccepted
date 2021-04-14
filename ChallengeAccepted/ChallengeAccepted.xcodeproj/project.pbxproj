@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2EA3AE164D81D470CCD9CCCC /* Pods_ChallengeAccepted.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08D2151DE77EF09A1E9C495 /* Pods_ChallengeAccepted.framework */; };
+		3B48CF942627A65E008ADC21 /* SecondBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B48CF932627A65E008ADC21 /* SecondBlock.swift */; };
 		3BB54701261E6ED900C00816 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB54700261E6ED900C00816 /* SignUpViewController.swift */; };
 		3BEE9789262798AD005266B7 /* MainFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE9788262798AD005266B7 /* MainFeedViewController.swift */; };
 		3BEE97B526279F46005266B7 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE97B426279F46005266B7 /* Block.swift */; };
@@ -76,6 +77,7 @@
 
 /* Begin PBXFileReference section */
 		164F7AD109B46B566BDA71FD /* Pods-ChallengeAcceptedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeAcceptedTests.release.xcconfig"; path = "Target Support Files/Pods-ChallengeAcceptedTests/Pods-ChallengeAcceptedTests.release.xcconfig"; sourceTree = "<group>"; };
+		3B48CF932627A65E008ADC21 /* SecondBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondBlock.swift; sourceTree = "<group>"; };
 		3BB54700261E6ED900C00816 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3BEE9788262798AD005266B7 /* MainFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeedViewController.swift; sourceTree = "<group>"; };
 		3BEE97B426279F46005266B7 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 				83E59D34260515DA00A5ACAD /* SceneDelegate.swift */,
 				83E59D38260515DA00A5ACAD /* Main.storyboard */,
 				3BEE97B426279F46005266B7 /* Block.swift */,
+				3B48CF932627A65E008ADC21 /* SecondBlock.swift */,
 				3BEE9788262798AD005266B7 /* MainFeedViewController.swift */,
 				83E59D3B260515E000A5ACAD /* Assets.xcassets */,
 				83E59D3D260515E000A5ACAD /* LaunchScreen.storyboard */,
@@ -647,6 +650,7 @@
 				833403C326058BD100172A91 /* PoseNetMobileNet075S16FP16.mlmodel in Sources */,
 				83E59D33260515DA00A5ACAD /* AppDelegate.swift in Sources */,
 				833403B326058BD100172A91 /* ConfigurationViewController.swift in Sources */,
+				3B48CF942627A65E008ADC21 /* SecondBlock.swift in Sources */,
 				833403BA26058BD100172A91 /* Joint.swift in Sources */,
 				833403BC26058BD100172A91 /* PoseBuilder+Single.swift in Sources */,
 				833816AE2622678E00823F0B /* Rep100ViewController.swift in Sources */,

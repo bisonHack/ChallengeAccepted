@@ -11,7 +11,15 @@ class MainFeedViewController: UIViewController {
 
 
     
+    @IBOutlet weak var image1: UIImageView!
+    
+    @IBOutlet weak var image2: UIImageView!
+    @IBOutlet weak var image3: UIImageView!
+    
     override func viewDidLoad() {
+        
+       image1.layer.masksToBounds = true
+        image1.layer.cornerRadius = image1.bounds.width / 2.5
         super.viewDidLoad()
         
 
