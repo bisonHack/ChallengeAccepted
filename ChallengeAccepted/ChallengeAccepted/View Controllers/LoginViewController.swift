@@ -31,8 +31,7 @@ class LoginViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    func loginUser(username: String, password: String) {
-//        PFUser.logInWithUsername(inBackground: "george", password: "george") { (user, error) in
+    func loginUser() {
         let username = usernameField.text!
         let password = passwordField.text!
         PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
@@ -52,7 +51,7 @@ class LoginViewController: UIViewController {
         if (username == "" || password == "") {
             emptyFieldAlert()
         }
-        loginUser(username: username!, password: password!)
+        loginUser()
     }
     
     @IBAction func didTapScreen(_ sender: Any) {
