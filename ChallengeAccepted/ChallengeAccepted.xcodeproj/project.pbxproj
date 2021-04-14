@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		2EA3AE164D81D470CCD9CCCC /* Pods_ChallengeAccepted.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08D2151DE77EF09A1E9C495 /* Pods_ChallengeAccepted.framework */; };
 		3BB54701261E6ED900C00816 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB54700261E6ED900C00816 /* SignUpViewController.swift */; };
-		56A0597B262672AF00902224 /* SelectWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A0597A262672AF00902224 /* SelectWorkoutViewController.swift */; };
-		56A05983262678BC00902224 /* SelectWorkoutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A05982262678BB00902224 /* SelectWorkoutCollectionViewCell.swift */; };
 		8334037C2605766B00172A91 /* WorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334037B2605766B00172A91 /* WorkoutCell.swift */; };
 		833403AB26058BD100172A91 /* SampleCode.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8334038A26058BD100172A91 /* SampleCode.xcconfig */; };
 		833403AC26058BD100172A91 /* PoseNetVisualization.png in Resources */ = {isa = PBXBuildFile; fileRef = 8334038C26058BD100172A91 /* PoseNetVisualization.png */; };
@@ -78,8 +76,6 @@
 		164F7AD109B46B566BDA71FD /* Pods-ChallengeAcceptedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeAcceptedTests.release.xcconfig"; path = "Target Support Files/Pods-ChallengeAcceptedTests/Pods-ChallengeAcceptedTests.release.xcconfig"; sourceTree = "<group>"; };
 		3BB54700261E6ED900C00816 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		4D22E47235D4BAE6F9FEFFB0 /* Pods-ChallengeAccepted.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeAccepted.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeAccepted/Pods-ChallengeAccepted.debug.xcconfig"; sourceTree = "<group>"; };
-		56A0597A262672AF00902224 /* SelectWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectWorkoutViewController.swift; sourceTree = "<group>"; };
-		56A05982262678BB00902224 /* SelectWorkoutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectWorkoutCollectionViewCell.swift; sourceTree = "<group>"; };
 		81A62B8C7444B02575FDE1ED /* Pods-ChallengeAccepted.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeAccepted.release.xcconfig"; path = "Target Support Files/Pods-ChallengeAccepted/Pods-ChallengeAccepted.release.xcconfig"; sourceTree = "<group>"; };
 		8334037B2605766B00172A91 /* WorkoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCell.swift; sourceTree = "<group>"; };
 		8334038A26058BD100172A91 /* SampleCode.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SampleCode.xcconfig; sourceTree = "<group>"; };
@@ -313,8 +309,6 @@
 				83E59D32260515DA00A5ACAD /* AppDelegate.swift */,
 				83E59D34260515DA00A5ACAD /* SceneDelegate.swift */,
 				83E59D38260515DA00A5ACAD /* Main.storyboard */,
-				56A0597A262672AF00902224 /* SelectWorkoutViewController.swift */,
-				56A05982262678BB00902224 /* SelectWorkoutCollectionViewCell.swift */,
 				3BB54700261E6ED900C00816 /* SignUpViewController.swift */,
 				83E59D3B260515E000A5ACAD /* Assets.xcassets */,
 				83E59D3D260515E000A5ACAD /* LaunchScreen.storyboard */,
@@ -628,7 +622,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56A0597B262672AF00902224 /* SelectWorkoutViewController.swift in Sources */,
 				3BB54701261E6ED900C00816 /* SignUpViewController.swift in Sources */,
 				83E59DA526056DF000A5ACAD /* WorkoutViewController.swift in Sources */,
 				833403B926058BD100172A91 /* VideoCapture.swift in Sources */,
@@ -636,7 +629,6 @@
 				833403C226058BD100172A91 /* PoseNetInput.swift in Sources */,
 				8334037C2605766B00172A91 /* WorkoutCell.swift in Sources */,
 				833403B626058BD100172A91 /* CGPoint+Extension.swift in Sources */,
-				56A05983262678BC00902224 /* SelectWorkoutCollectionViewCell.swift in Sources */,
 				83E59D8C2605354D00A5ACAD /* LoginViewController.swift in Sources */,
 				833403BF26058BD100172A91 /* PoseBuilderConfiguration.swift in Sources */,
 				8339DF1026224DBF004866B2 /* ModeViewController.swift in Sources */,
