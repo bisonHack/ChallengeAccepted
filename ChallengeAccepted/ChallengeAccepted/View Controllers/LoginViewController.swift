@@ -32,7 +32,6 @@ class LoginViewController: UIViewController {
     }
     
     func loginUser(username: String, password: String) {
-//        PFUser.logInWithUsername(inBackground: "george", password: "george") { (user, error) in
         let username = usernameField.text!
         let password = passwordField.text!
         PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in

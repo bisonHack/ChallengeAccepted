@@ -315,7 +315,6 @@
 				83E59D38260515DA00A5ACAD /* Main.storyboard */,
 				56A0597A262672AF00902224 /* SelectWorkoutViewController.swift */,
 				56A05982262678BB00902224 /* SelectWorkoutCollectionViewCell.swift */,
-				3BB54700261E6ED900C00816 /* SignUpViewController.swift */,
 				83E59D3B260515E000A5ACAD /* Assets.xcassets */,
 				83E59D3D260515E000A5ACAD /* LaunchScreen.storyboard */,
 				83E59D40260515E000A5ACAD /* Info.plist */,
@@ -345,6 +344,7 @@
 			isa = PBXGroup;
 			children = (
 				83E59D8B2605354D00A5ACAD /* LoginViewController.swift */,
+				3BB54700261E6ED900C00816 /* SignUpViewController.swift */,
 				83E59D90260545C700A5ACAD /* HomeViewController.swift */,
 				83E59DA426056DF000A5ACAD /* WorkoutViewController.swift */,
 				833403C72605956800172A91 /* ChallengeViewController.swift */,
