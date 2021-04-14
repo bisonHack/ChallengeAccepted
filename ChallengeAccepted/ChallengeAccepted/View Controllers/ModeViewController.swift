@@ -37,13 +37,16 @@ class ModeViewController: UIViewController {
         PFUser.current()?.saveInBackground()
     }
     
+    func wrongUserAlert() {
+        let alert = UIAlertController(title: "Invalid Details", message: "The username or password is incorrect", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     func loginUser(username: String, password: String) {
         PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
-            if (user != nil){
-                self.performSegue(withIdentifier: "secondSegue", sender: nil);
-            } else{
+            if (user == nil){
                 self.wrongUserAlert()
-                print(username + " " + password)
                 print("Error: \(String(describing: error?.localizedDescription))")
             }
         }
