@@ -37,6 +37,18 @@ class ModeViewController: UIViewController {
         PFUser.current()?.saveInBackground()
     }
     
+    func loginUser(username: String, password: String) {
+        PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
+            if (user != nil){
+                self.performSegue(withIdentifier: "secondSegue", sender: nil);
+            } else{
+                self.wrongUserAlert()
+                print(username + " " + password)
+                print("Error: \(String(describing: error?.localizedDescription))")
+            }
+        }
+    }
+    
     func notImplementedAlert(){
         let alert = UIAlertController(title: "Coming soon...", message: "Feature on the rise", preferredStyle: .alert)
         self.present(alert, animated: true, completion: nil)
