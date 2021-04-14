@@ -31,16 +31,22 @@ class ModeViewController: UIViewController {
         setupUI()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        PFUser.current()?.setObject(false, forKey: "Looking")
+        PFUser.current()?.setObject(0, forKey: "currentCount")
+        PFUser.current()?.saveInBackground()
+    }
+    
     func notImplementedAlert(){
-            let alert = UIAlertController(title: "Coming soon...", message: "Feature on the rise", preferredStyle: .alert)
-            self.present(alert, animated: true, completion: nil)
+        let alert = UIAlertController(title: "Coming soon...", message: "Feature on the rise", preferredStyle: .alert)
+        self.present(alert, animated: true, completion: nil)
 
-            let when = DispatchTime.now() + 2
-            DispatchQueue.main.asyncAfter(deadline: when){
-              // your code with delay
-              alert.dismiss(animated: true, completion: nil)
-            }
+        let when = DispatchTime.now() + 2
+        DispatchQueue.main.asyncAfter(deadline: when) {
+          // your code with delay
+          alert.dismiss(animated: true, completion: nil)
         }
+    }
     
     func setupUI() {
         self.backgroundImg.frame = view.frame
@@ -70,7 +76,7 @@ class ModeViewController: UIViewController {
         self.soloBtn.layer.borderColor = UIColor.black.cgColor
     }
     
-    func noRandUserAlert(){
+    func noRandUserAlert() {
         let alert = UIAlertController(title: "Couldn't find User", message: "No user found", preferredStyle: .alert)
         self.present(alert, animated: true, completion: nil)
 
@@ -81,20 +87,20 @@ class ModeViewController: UIViewController {
         }
     }
     
-    @objc func getRandUser(){
+    @objc func getRandUser() {
         let query = PFUser.query()!
         query.whereKey("username", notEqualTo: PFUser.current()?.username!)
         query.whereKey("Looking", equalTo: true)
         query.findObjectsInBackground { (objects, error) in
-            if (error == nil){
+            if (error == nil) {
                 self.timeTrack += 1
-                if (!objects!.isEmpty){
+                if (!objects!.isEmpty) {
                     self.randUser = (objects![0] as! PFUser)
                     self.timer.invalidate()
                     self.activityView.stopAnimating()
                     self.performSegue(withIdentifier: self.segueType, sender: nil)
-                } else{
-                    if (self.timeTrack == 20){
+                } else {
+                    if (self.timeTrack == 20) {
                         self.timer.invalidate()
                         self.activityView.stopAnimating()
                         self.timeTrack = 0
@@ -151,10 +157,13 @@ class ModeViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == self.segueType){
-                    
-                }
+        if (segue.identifier == "100Reps") {
+            let viewController = segue.destination as! Rep100ViewController
+            viewController.randomUser = randUser
+        } else {
+            let viewController = segue.destination as! Rep60sViewController
+            viewController.randomUser = randUser
+        }
     }
-
-
+    
 }
