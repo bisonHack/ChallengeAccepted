@@ -10,6 +10,7 @@ import UIKit
 class WorkoutCell: UICollectionViewCell {
     
     @IBOutlet weak var workoutImage: UIImageView!
+    @IBOutlet weak var workoutName: UILabel!
     
     func setImage(imageName: String) {
         let image = UIImage(named: imageName)

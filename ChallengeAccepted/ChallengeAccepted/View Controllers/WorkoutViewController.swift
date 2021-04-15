@@ -61,6 +61,27 @@ class WorkoutViewController: UIViewController,  UICollectionViewDelegate, UIColl
         let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "WorkoutCell",
                                                            for: indexPath) as! WorkoutCell
         cell.setImage(imageName: self.workOuts[indexPath.row])
+        if (self.workOuts[indexPath.row] == "pushups2"){
+            cell.workoutName.text = "Push-ups"
+        }
+        else if (self.workOuts[indexPath.row] == "jumping"){
+            cell.workoutName.text = "Squat Jumps"
+        }
+        else if (self.workOuts[indexPath.row] == "stretch"){
+            cell.workoutName.text = "Oblique Stretch"
+        }
+        else if (self.workOuts[indexPath.row] == "newsquat"){
+            cell.workoutName.text = "Squat"
+        }
+        else if (self.workOuts[indexPath.row] == "lunge"){
+            cell.workoutName.text = "Lunges"
+        }
+        else if (self.workOuts[indexPath.row] == "sprint"){
+            cell.workoutName.text = "Sprint"
+        }
+        else {
+            cell.workoutName.text = self.workOuts[indexPath.row]
+        }
         return cell
     }
     

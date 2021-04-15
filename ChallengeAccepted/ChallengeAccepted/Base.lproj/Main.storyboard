@@ -265,6 +265,7 @@
                                         <size key="customSize" width="197" height="247"/>
                                         <connections>
                                             <outlet property="workoutImage" destination="Gew-HE-QeD" id="dfG-N3-UAd"/>
+                                            <outlet property="workoutName" destination="wX8-ba-dUA" id="heq-DJ-Ug0"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
