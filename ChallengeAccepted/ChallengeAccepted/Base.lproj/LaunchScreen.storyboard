@@ -10,7 +10,7 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController wantsFullScreenLayout="YES" extendedLayoutIncludesOpaqueBars="YES" modalPresentationStyle="fullScreen" id="01J-lp-oVM" sceneMemberID="viewController">
-                    <imageView key="view" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch Screen (1)" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="VOr-5w-I5X">
+                    <imageView key="view" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch Screen" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="VOr-5w-I5X">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
@@ -21,6 +21,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Launch Screen (1)" width="1266" height="2712"/>
+        <image name="Launch Screen" width="1266" height="2712"/>
     </resources>
 </document>
