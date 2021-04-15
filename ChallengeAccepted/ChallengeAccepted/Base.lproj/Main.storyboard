@@ -1126,8 +1126,8 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="profile1" translatesAutoresizingMaskIntoConstraints="NO" id="WGl-bM-y1e">
                                         <rect key="frame" x="0.0" y="8" width="126" height="106"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ayo2" translatesAutoresizingMaskIntoConstraints="NO" id="jbz-9V-Jqi">
-                                        <rect key="frame" x="134" y="33" width="87" height="45"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AY" translatesAutoresizingMaskIntoConstraints="NO" id="jbz-9V-Jqi">
+                                        <rect key="frame" x="132" y="39" width="87" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -1157,11 +1157,11 @@
                                             <action selector="didTapChallengeBtn2:" destination="Eh4-UR-QEX" eventType="touchUpInside" id="QdQ-5e-yZQ"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="profile2" translatesAutoresizingMaskIntoConstraints="NO" id="OGf-PZ-FU6">
-                                        <rect key="frame" x="8" y="0.0" width="103" height="118"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" misplaced="YES" image="profile2" translatesAutoresizingMaskIntoConstraints="NO" id="OGf-PZ-FU6">
+                                        <rect key="frame" x="8" y="0.0" width="112" height="128"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Kiley" translatesAutoresizingMaskIntoConstraints="NO" id="Ouw-Qa-dRy">
-                                        <rect key="frame" x="130" y="29" width="151" height="68"/>
+                                        <rect key="frame" x="131" y="25" width="151" height="68"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -1241,8 +1241,8 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="profile3" translatesAutoresizingMaskIntoConstraints="NO" id="ct2-PT-ZDb">
                                         <rect key="frame" x="8" y="10" width="125" height="106"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ayo2" translatesAutoresizingMaskIntoConstraints="NO" id="2mS-5c-ONI">
-                                        <rect key="frame" x="141" y="36" width="100" height="55"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Shoobs" translatesAutoresizingMaskIntoConstraints="NO" id="2mS-5c-ONI">
+                                        <rect key="frame" x="132" y="25" width="152" height="55"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -1336,7 +1336,7 @@
         <segue reference="R3d-uj-Pad"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="Ayo2" width="300" height="132"/>
+        <image name="AY" width="300" height="137"/>
         <image name="Group 2" width="954" height="198"/>
         <image name="Group 4" width="960" height="171"/>
         <image name="Group 46" width="828" height="102"/>
@@ -1344,8 +1344,9 @@
         <image name="Group 8" width="951" height="138"/>
         <image name="Group 9" width="960" height="126"/>
         <image name="Hamburger" width="54" height="54"/>
-        <image name="Kiley" width="581" height="208"/>
+        <image name="Kiley" width="568" height="140"/>
         <image name="Launch Screen (3)" width="1688" height="3616"/>
+        <image name="Shoobs" width="574" height="172"/>
         <image name="SignUp" width="954" height="198"/>
         <image name="Timeline" width="1266" height="2712"/>
         <image name="WorkoutTab24px" width="24" height="24"/>
