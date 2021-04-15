@@ -17,7 +17,7 @@ class Rep100ViewController: UIViewController, ConfigurationViewControllerDelegat
     @IBOutlet weak var randPreviewImageView: UIImageView!
     @IBOutlet weak var randCounterLabel: UILabel!
 
-    var squatCounter = 0 // Counter for Squats
+    var squatCounter = 90 // Counter for Squats
     var previous = [Float]()    // Previous data of squats
     var current = [Float]() // Current Squatting data
     var previous_action: String = "r"    // Current State of body
@@ -25,7 +25,7 @@ class Rep100ViewController: UIViewController, ConfigurationViewControllerDelegat
     var working = true
     var heightEstimator = 5.58
 
-    var randSquatCounter = 0
+    var randSquatCounter = 90
     var category: String!
     
     var userTimer = Timer()
