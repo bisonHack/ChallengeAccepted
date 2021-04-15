@@ -83,7 +83,7 @@ class WorkoutViewController: UIViewController,  UICollectionViewDelegate, UIColl
             cell.workoutName.text = self.workOuts[indexPath.row]
         }
         return cell
-    }
+    } 
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if (self.workOuts[indexPath.row] == "squats") {
