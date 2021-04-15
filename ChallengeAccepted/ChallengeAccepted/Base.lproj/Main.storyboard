@@ -462,7 +462,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ic8-le-IF1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1690.6542056074766" y="3312.9589632829375"/>
+            <point key="canvasLocation" x="1692" y="3313"/>
         </scene>
         <!--Select Workout View Controller-->
         <scene sceneID="PTk-dA-FuO">
@@ -1237,7 +1237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y8H-6b-4T7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="956" y="2568"/>
+            <point key="canvasLocation" x="932" y="3313"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
