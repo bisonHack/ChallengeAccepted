@@ -61,5 +61,8 @@ class SignUpViewController: UIViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    @IBAction func didTapView(_ sender: Any) {
+        self.view.endEditing(true)
+    }
     
 }
