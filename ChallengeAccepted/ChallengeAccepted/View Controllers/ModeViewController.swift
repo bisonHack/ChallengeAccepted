@@ -78,17 +78,17 @@ class ModeViewController: UIViewController {
         self.challengeLabel.frame.origin.y = 185.0
         self.challengeLabel.sizeToFit()
         
-        self.maxRepsBtn.layer.cornerRadius = 20.0
-        self.maxRepsBtn.layer.borderWidth = 2.0
-        self.maxRepsBtn.layer.borderColor = UIColor.black.cgColor
-        
-        self.raceBtn.layer.cornerRadius = 20.0
-        self.raceBtn.layer.borderWidth = 2.0
-        self.raceBtn.layer.borderColor = UIColor.black.cgColor
-        
-        self.soloBtn.layer.cornerRadius = 20.0
-        self.soloBtn.layer.borderWidth = 2.0
-        self.soloBtn.layer.borderColor = UIColor.black.cgColor
+//        self.maxRepsBtn.layer.cornerRadius = 20.0
+//        self.maxRepsBtn.layer.borderWidth = 2.0
+//        self.maxRepsBtn.layer.borderColor = UIColor.black.cgColor
+//        
+//        self.raceBtn.layer.cornerRadius = 20.0
+//        self.raceBtn.layer.borderWidth = 2.0
+//        self.raceBtn.layer.borderColor = UIColor.black.cgColor
+//        
+//        self.soloBtn.layer.cornerRadius = 20.0
+//        self.soloBtn.layer.borderWidth = 2.0
+//        self.soloBtn.layer.borderColor = UIColor.black.cgColor
     }
     
     func noRandUserAlert() {
