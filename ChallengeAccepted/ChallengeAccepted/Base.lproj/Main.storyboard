@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lWg-D4-uxj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -233,7 +233,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="znJ-rY-1WJ">
-                                <rect key="frame" x="0.0" y="209.66666666666669" width="428" height="716.33333333333326"/>
+                                <rect key="frame" x="0.0" y="165.66666666666669" width="428" height="760.33333333333326"/>
                                 <color key="backgroundColor" red="0.18039215689999999" green="0.20784313730000001" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4z1-ke-Ud2">
                                     <size key="itemSize" width="197" height="247"/>
@@ -283,7 +283,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufc-H0-7FN">
-                                <rect key="frame" x="7" y="156.66666666666666" width="401" height="28"/>
+                                <rect key="frame" x="7" y="112.66666666666667" width="401" height="28.000000000000014"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Then challenge yourself!">
                                         <attributes>
@@ -321,6 +321,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="znJ-rY-1WJ" id="XbH-j2-Gql"/>
+                        <segue destination="tHF-fK-gu1" kind="presentation" identifier="multiSegue" modalPresentationStyle="fullScreen" id="YWB-4d-zFL"/>
+                        <segue destination="cOz-gq-LbD" kind="presentation" identifier="soloSegue" modalPresentationStyle="fullScreen" id="Jnp-bS-sbI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TDd-vo-kVK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1042,7 +1044,6 @@
                                 </state>
                                 <connections>
                                     <action selector="didTapChallenge:" destination="1RB-Ff-s0m" eventType="touchUpInside" id="VZI-fy-xo0"/>
-                                    <action selector="didTapRace:" destination="1RB-Ff-s0m" eventType="touchUpInside" id="j0s-Qz-5UD"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CHALLENGEACCEPTED (19) 2" translatesAutoresizingMaskIntoConstraints="NO" id="g2R-2B-u5x">
@@ -1075,7 +1076,6 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="didTapMaxRep:" destination="1RB-Ff-s0m" eventType="touchUpInside" id="cml-TW-a1x"/>
                                     <action selector="didTapSolo:" destination="1RB-Ff-s0m" eventType="touchUpInside" id="PUi-Rd-e8m"/>
                                 </connections>
                             </button>
@@ -1085,12 +1085,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="UAM-Zj-P61"/>
                     <connections>
-                        <outlet property="backgroundImg" destination="Sr0-Qr-XLe" id="JLL-uG-TST"/>
-                        <outlet property="challengeLabel" destination="nsQ-rJ-C1A" id="5Dw-ex-rM3"/>
-                        <outlet property="hamburgerImg" destination="mHE-pZ-f7W" id="JPU-RS-Sp5"/>
-                        <outlet property="logoImg" destination="g2R-2B-u5x" id="Fhu-al-RsW"/>
-                        <outlet property="maxRepsBtn" destination="bJf-F9-prq" id="5oK-ge-xg7"/>
-                        <outlet property="raceBtn" destination="m7L-44-iZZ" id="TYW-js-ydi"/>
                         <segue destination="ajj-pn-KDQ" kind="presentation" identifier="soloSegue" modalPresentationStyle="fullScreen" id="sKs-mh-0Bd"/>
                         <segue destination="lWg-D4-uxj" kind="presentation" identifier="multiSegue" modalPresentationStyle="fullScreen" id="iQP-w8-Tvk"/>
                     </connections>
@@ -1117,6 +1111,9 @@
                                             <constraint firstAttribute="height" constant="40" id="rxq-8J-WYK"/>
                                         </constraints>
                                         <state key="normal" title="Challenge"/>
+                                        <connections>
+                                            <action selector="didTapChallengeBtn1:" destination="Eh4-UR-QEX" eventType="touchUpInside" id="Zn2-q9-47C"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="profile1" translatesAutoresizingMaskIntoConstraints="NO" id="WGl-bM-y1e">
                                         <rect key="frame" x="8" y="12" width="128" height="106"/>
@@ -1135,7 +1132,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="axN-Mg-gJr" customClass="BlockView" customModule="ChallengeAccepted" customModuleProvider="target">
-                                <rect key="frame" x="23" y="577" width="388" height="126"/>
+                                <rect key="frame" x="20" y="604" width="388" height="126"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jk1-2M-Vsl">
                                         <rect key="frame" x="299" y="66" width="69" height="40"/>
@@ -1144,6 +1141,9 @@
                                             <constraint firstAttribute="height" constant="40" id="ow1-2u-jQs"/>
                                         </constraints>
                                         <state key="normal" title="Challenge"/>
+                                        <connections>
+                                            <action selector="didTapChallengeBtn2:" destination="Eh4-UR-QEX" eventType="touchUpInside" id="QdQ-5e-yZQ"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="profile2" translatesAutoresizingMaskIntoConstraints="NO" id="OGf-PZ-FU6">
                                         <rect key="frame" x="8" y="12" width="128" height="106"/>
@@ -1177,33 +1177,6 @@
                                     <action selector="shareAll:" destination="Eh4-UR-QEX" eventType="touchUpInside" id="JIU-Fb-cmQ"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t8L-pv-DhN" customClass="BlockView" customModule="ChallengeAccepted" customModuleProvider="target">
-                                <rect key="frame" x="23" y="730" width="388" height="126"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvN-j6-23e">
-                                        <rect key="frame" x="299" y="66" width="69" height="40"/>
-                                        <color key="backgroundColor" red="0.18148702380000001" green="0.19805577399999999" blue="0.44708418849999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="Pxf-qz-deR"/>
-                                        </constraints>
-                                        <state key="normal" title="Challenge"/>
-                                    </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="profile3" translatesAutoresizingMaskIntoConstraints="NO" id="ct2-PT-ZDb">
-                                        <rect key="frame" x="8" y="12" width="128" height="106"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemGray3Color"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="vvN-j6-23e" secondAttribute="trailing" constant="20" id="3QZ-ph-ejt"/>
-                                    <constraint firstItem="vvN-j6-23e" firstAttribute="top" secondItem="t8L-pv-DhN" secondAttribute="top" constant="66" id="5Ga-iB-3bJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="vvN-j6-23e" secondAttribute="bottom" constant="20" id="FLW-Qz-41b"/>
-                                    <constraint firstAttribute="bottom" secondItem="ct2-PT-ZDb" secondAttribute="bottom" constant="8" id="Iea-yN-Hq7"/>
-                                    <constraint firstItem="vvN-j6-23e" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="t8L-pv-DhN" secondAttribute="leading" constant="20" symbolic="YES" id="Mi5-8r-pPc"/>
-                                    <constraint firstItem="ct2-PT-ZDb" firstAttribute="leading" secondItem="t8L-pv-DhN" secondAttribute="leading" constant="8" id="TXq-wE-U2n"/>
-                                    <constraint firstItem="vvN-j6-23e" firstAttribute="leading" secondItem="ct2-PT-ZDb" secondAttribute="trailing" constant="163" id="UWJ-om-0IY"/>
-                                    <constraint firstItem="ct2-PT-ZDb" firstAttribute="top" secondItem="t8L-pv-DhN" secondAttribute="top" constant="12" id="uZS-eF-cp8"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHL-ti-d7C" customClass="SecondBlock" customModule="ChallengeAccepted" customModuleProvider="target">
                                 <rect key="frame" x="17" y="169" width="394" height="203"/>
                                 <subviews>
@@ -1243,6 +1216,36 @@
                                     <constraint firstItem="HxT-l3-Ls1" firstAttribute="leading" secondItem="eS1-OO-0Mz" secondAttribute="leading" id="wNz-js-rMf"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t8L-pv-DhN" customClass="BlockView" customModule="ChallengeAccepted" customModuleProvider="target">
+                                <rect key="frame" x="20" y="738" width="388" height="126"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvN-j6-23e">
+                                        <rect key="frame" x="299" y="66" width="69" height="40"/>
+                                        <color key="backgroundColor" red="0.18148702380000001" green="0.19805577399999999" blue="0.44708418849999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Pxf-qz-deR"/>
+                                        </constraints>
+                                        <state key="normal" title="Challenge"/>
+                                        <connections>
+                                            <action selector="didTapCHallengeBtn3:" destination="Eh4-UR-QEX" eventType="touchUpInside" id="rb7-sL-1G0"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="profile3" translatesAutoresizingMaskIntoConstraints="NO" id="ct2-PT-ZDb">
+                                        <rect key="frame" x="8" y="12" width="128" height="106"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vvN-j6-23e" secondAttribute="trailing" constant="20" id="3QZ-ph-ejt"/>
+                                    <constraint firstItem="vvN-j6-23e" firstAttribute="top" secondItem="t8L-pv-DhN" secondAttribute="top" constant="66" id="5Ga-iB-3bJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="vvN-j6-23e" secondAttribute="bottom" constant="20" id="FLW-Qz-41b"/>
+                                    <constraint firstAttribute="bottom" secondItem="ct2-PT-ZDb" secondAttribute="bottom" constant="8" id="Iea-yN-Hq7"/>
+                                    <constraint firstItem="vvN-j6-23e" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="t8L-pv-DhN" secondAttribute="leading" constant="20" symbolic="YES" id="Mi5-8r-pPc"/>
+                                    <constraint firstItem="ct2-PT-ZDb" firstAttribute="leading" secondItem="t8L-pv-DhN" secondAttribute="leading" constant="8" id="TXq-wE-U2n"/>
+                                    <constraint firstItem="vvN-j6-23e" firstAttribute="leading" secondItem="ct2-PT-ZDb" secondAttribute="trailing" constant="163" id="UWJ-om-0IY"/>
+                                    <constraint firstItem="ct2-PT-ZDb" firstAttribute="top" secondItem="t8L-pv-DhN" secondAttribute="top" constant="12" id="uZS-eF-cp8"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UGm-F5-NME"/>
                         <color key="backgroundColor" red="0.18539941309999999" green="0.2061162889" blue="0.45100563760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1251,27 +1254,34 @@
                             <constraint firstItem="mHL-ti-d7C" firstAttribute="leading" secondItem="bEd-f0-J2E" secondAttribute="leading" constant="-6" id="7lR-kr-XRo"/>
                             <constraint firstItem="6qZ-mz-cap" firstAttribute="baseline" secondItem="DGU-n7-fm3" secondAttribute="baseline" id="8JO-X7-hix"/>
                             <constraint firstItem="bEd-f0-J2E" firstAttribute="top" secondItem="mHL-ti-d7C" secondAttribute="bottom" constant="98" id="Bn9-Ta-smH"/>
-                            <constraint firstItem="UGm-F5-NME" firstAttribute="bottom" secondItem="t8L-pv-DhN" secondAttribute="bottom" constant="36" id="CXd-Pu-NpK"/>
-                            <constraint firstItem="t8L-pv-DhN" firstAttribute="trailing" secondItem="bEd-f0-J2E" secondAttribute="trailing" id="D5X-kV-XUX"/>
+                            <constraint firstItem="UGm-F5-NME" firstAttribute="bottom" secondItem="t8L-pv-DhN" secondAttribute="bottom" constant="28" id="CXd-Pu-NpK"/>
+                            <constraint firstItem="t8L-pv-DhN" firstAttribute="trailing" secondItem="bEd-f0-J2E" secondAttribute="trailing" constant="-3" id="D5X-kV-XUX"/>
                             <constraint firstItem="DGU-n7-fm3" firstAttribute="leading" secondItem="UGm-F5-NME" secondAttribute="leading" constant="26" id="Dc0-Oh-TLL"/>
                             <constraint firstItem="bEd-f0-J2E" firstAttribute="leading" secondItem="UGm-F5-NME" secondAttribute="leading" constant="23" id="JBU-gI-PMr"/>
                             <constraint firstItem="mHL-ti-d7C" firstAttribute="top" secondItem="UGm-F5-NME" secondAttribute="top" constant="81" id="NwZ-UF-mKI"/>
-                            <constraint firstItem="t8L-pv-DhN" firstAttribute="leading" secondItem="bEd-f0-J2E" secondAttribute="leading" id="QGb-tS-tGW"/>
-                            <constraint firstItem="axN-Mg-gJr" firstAttribute="centerX" secondItem="mHL-ti-d7C" secondAttribute="centerX" constant="3" id="RZk-dF-7Da"/>
+                            <constraint firstItem="t8L-pv-DhN" firstAttribute="leading" secondItem="bEd-f0-J2E" secondAttribute="leading" constant="-3" id="QGb-tS-tGW"/>
+                            <constraint firstItem="axN-Mg-gJr" firstAttribute="centerX" secondItem="mHL-ti-d7C" secondAttribute="centerX" id="RZk-dF-7Da"/>
                             <constraint firstItem="UGm-F5-NME" firstAttribute="trailing" secondItem="DGU-n7-fm3" secondAttribute="trailing" constant="227" id="WuQ-n8-QCK"/>
-                            <constraint firstItem="t8L-pv-DhN" firstAttribute="top" secondItem="axN-Mg-gJr" secondAttribute="bottom" constant="27" id="Xq5-ld-StF"/>
+                            <constraint firstItem="t8L-pv-DhN" firstAttribute="top" secondItem="axN-Mg-gJr" secondAttribute="bottom" constant="8" id="Xq5-ld-StF"/>
                             <constraint firstItem="UGm-F5-NME" firstAttribute="trailing" secondItem="bEd-f0-J2E" secondAttribute="trailing" constant="17" id="g5w-xW-jjA"/>
-                            <constraint firstItem="UGm-F5-NME" firstAttribute="trailing" secondItem="axN-Mg-gJr" secondAttribute="trailing" constant="17" id="nVu-kf-Itt"/>
+                            <constraint firstItem="UGm-F5-NME" firstAttribute="trailing" secondItem="axN-Mg-gJr" secondAttribute="trailing" constant="20" id="nVu-kf-Itt"/>
                             <constraint firstItem="bEd-f0-J2E" firstAttribute="top" secondItem="DGU-n7-fm3" secondAttribute="bottom" constant="25" id="ngt-97-JHu"/>
                             <constraint firstItem="6qZ-mz-cap" firstAttribute="leading" secondItem="DGU-n7-fm3" secondAttribute="trailing" constant="32" id="qjR-fe-WDc"/>
-                            <constraint firstItem="axN-Mg-gJr" firstAttribute="leading" secondItem="UGm-F5-NME" secondAttribute="leading" constant="23" id="tnL-UW-YaA"/>
+                            <constraint firstItem="axN-Mg-gJr" firstAttribute="leading" secondItem="UGm-F5-NME" secondAttribute="leading" constant="20" id="tnL-UW-YaA"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="LpD-bE-Tty"/>
+                    <navigationItem key="navigationItem" id="LpD-bE-Tty">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="0qm-zN-pSa">
+                            <connections>
+                                <action selector="didTapButton:" destination="Eh4-UR-QEX" id="6sz-Nc-7Wv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="image1" destination="WGl-bM-y1e" id="cgN-Ma-31c"/>
                         <outlet property="image2" destination="OGf-PZ-FU6" id="5iD-Pm-cWL"/>
                         <outlet property="image3" destination="ct2-PT-ZDb" id="Qvi-pX-ARh"/>
+                        <segue destination="1vQ-dg-RuE" kind="presentation" identifier="workoutSegue" modalPresentationStyle="fullScreen" id="R3d-uj-Pad"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2B1-hz-hMs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1298,8 +1308,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ffO-PP-1Yl"/>
-        <segue reference="Aqf-gd-SHq"/>
+        <segue reference="Py0-SH-sfU"/>
+        <segue reference="R3d-uj-Pad"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="CHALLENGEACCEPTED (19) 2" width="33" height="33"/>

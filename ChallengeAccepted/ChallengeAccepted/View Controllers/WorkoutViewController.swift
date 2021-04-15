@@ -18,7 +18,7 @@ class WorkoutViewController: UIViewController,  UICollectionViewDelegate, UIColl
     var timer = Timer()
     var activityView: UIActivityIndicatorView!
     
-    var workoutType: String!
+    var solo: Bool!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,76 +66,19 @@ class WorkoutViewController: UIViewController,  UICollectionViewDelegate, UIColl
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if (self.workOuts[indexPath.row] == "squats") {
-            self.performSegue(withIdentifier: "soloworkoutSegue", sender: nil)
+            if (solo) {
+                self.performSegue(withIdentifier: "soloSegue", sender: nil)
+            } else {
+                self.performSegue(withIdentifier: "multiSegue", sender: nil)
+            }
         } else{
             self.notImplementedAlert()
         }
     }
-    
-    func showActivityIndicatory() {
-        let container: UIView = UIView()
-        container.frame = CGRect(x: 0, y: 0, width: 80, height: 80) // Set X and Y whatever you want
-        container.backgroundColor = .clear
 
-        activityView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
-        activityView.center = self.view.center
-
-        container.addSubview(activityView)
-        self.view.addSubview(container)
-        activityView.startAnimating()
-    }
-    
-    func noRandUserAlert(){
-        let alert = UIAlertController(title: "Couldn't find User", message: "No user found", preferredStyle: .alert)
-        self.present(alert, animated: true, completion: nil)
-
-        let when = DispatchTime.now() + 2
-        DispatchQueue.main.asyncAfter(deadline: when){
-          // your code with delay
-          alert.dismiss(animated: true, completion: nil)
-        }
-    }
-    
-    @objc func getRandUser(){
-        let query = PFUser.query()!
-        query.whereKey("username", notEqualTo: PFUser.current()?.username! ?? "")
-        query.whereKey("Looking", equalTo: true)
-        query.findObjectsInBackground { (objects, error) in
-            if (error == nil){
-                self.timeTrack += 1
-                if (!objects!.isEmpty){
-                    self.randUser = (objects![0] as! PFUser)
-                    self.timer.invalidate()
-                    self.activityView.stopAnimating()
-                    self.performSegue(withIdentifier: "randChallengeSegue", sender: nil)
-                } else{
-                    if (self.timeTrack == 20){
-                        self.timer.invalidate()
-                        self.activityView.stopAnimating()
-                        self.timeTrack = 0
-                        self.noRandUserAlert()
-                        PFUser.current()?.setObject(false, forKey: "Looking")
-                        PFUser.current()?.saveInBackground()
-                    }
-                }
-            }
-        }
-    }
-    
-    
-    @IBAction func didTapChallenge(_ sender: Any) {
-        showActivityIndicatory()
-        PFUser.current()?.setObject(true, forKey: "Looking")
-        PFUser.current()?.saveInBackground()
-        self.timer = Timer.scheduledTimer(timeInterval: 1,
-                                          target: self,
-                                          selector: #selector(getRandUser),
-                                          userInfo: nil,
-                                          repeats: true)
-    }
-    
+    /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "randChallengeSegue"){
@@ -143,5 +86,6 @@ class WorkoutViewController: UIViewController,  UICollectionViewDelegate, UIColl
             randChallengeController.opponent = randUser
         }
     }
+ */
 
 }

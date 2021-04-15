@@ -36,6 +36,7 @@ class SignUpViewController: UIViewController {
                 self.lastName.text?.removeAll()
                 self.username.text?.removeAll()
                 self.password.text?.removeAll()
+                self.performSegue(withIdentifier: "loginSegue", sender: nil);
 //
             } else {
                 let alert = UIAlertController(title: "Incomplete Details", message: "Please add your sign up details", preferredStyle: .alert)

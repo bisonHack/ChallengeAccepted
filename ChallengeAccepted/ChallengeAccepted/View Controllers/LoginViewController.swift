@@ -36,7 +36,7 @@ class LoginViewController: UIViewController {
         let password = passwordField.text!
         PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
             if (user != nil){
-                self.performSegue(withIdentifier: "secondSegue", sender: nil);
+                self.performSegue(withIdentifier: "loginSegue", sender: nil);
             } else{
                 self.wrongUserAlert()
                 print(username + " " + password)

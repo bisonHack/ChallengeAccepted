@@ -15,7 +15,7 @@ class MainFeedViewController: UIViewController {
     @IBOutlet weak var image2: UIImageView!
     @IBOutlet weak var image3: UIImageView!
     
-    var workoutType: String!
+    var solo: Bool!
     
     override func viewDidLoad() {
         
@@ -28,9 +28,22 @@ class MainFeedViewController: UIViewController {
     }
     
 
+    @IBAction func didTapButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
+    @IBAction func didTapChallengeBtn1(_ sender: Any) {
+        self.performSegue(withIdentifier: "workoutSegue", sender: nil)
+    }
     
-
+    @IBAction func didTapChallengeBtn2(_ sender: Any) {
+        self.performSegue(withIdentifier: "workoutSegue", sender: nil)
+    }
+    
+    @IBAction func didTapCHallengeBtn3(_ sender: Any) {
+        self.performSegue(withIdentifier: "workoutSegue", sender: nil)
+    }
+    
     @IBAction func shareAll(_ sender: Any) {
         let text = "Ayo is inviting to you to join her Squat Challenge"
         let image = UIImage(named: "logo3")
@@ -47,8 +60,9 @@ class MainFeedViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let viewController = segue.destination as! WorkoutViewController
+        viewController.solo = false
+        
     }
 
 }
