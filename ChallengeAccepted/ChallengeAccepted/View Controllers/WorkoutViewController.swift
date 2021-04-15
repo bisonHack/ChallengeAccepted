@@ -18,6 +18,8 @@ class WorkoutViewController: UIViewController,  UICollectionViewDelegate, UIColl
     var timer = Timer()
     var activityView: UIActivityIndicatorView!
     
+    var workoutType: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

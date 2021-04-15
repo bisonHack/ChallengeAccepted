@@ -12,9 +12,10 @@ class MainFeedViewController: UIViewController {
 
     
     @IBOutlet weak var image1: UIImageView!
-    
     @IBOutlet weak var image2: UIImageView!
     @IBOutlet weak var image3: UIImageView!
+    
+    var workoutType: String!
     
     override func viewDidLoad() {
         
@@ -41,8 +42,7 @@ class MainFeedViewController: UIViewController {
         
     }
     
-
-    /*
+   
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -50,16 +50,5 @@ class MainFeedViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

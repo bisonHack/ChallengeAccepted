@@ -43,6 +43,7 @@
 		833816A92622674100823F0B /* Rep60sViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833816A82622674100823F0B /* Rep60sViewController.swift */; };
 		833816AE2622678E00823F0B /* Rep100ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833816AD2622678E00823F0B /* Rep100ViewController.swift */; };
 		8339DF1026224DBF004866B2 /* ModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8339DF0F26224DBF004866B2 /* ModeViewController.swift */; };
+		8356A0452627C0F200D189C1 /* SoloVersusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8356A0442627C0F200D189C1 /* SoloVersusViewController.swift */; };
 		83E59D33260515DA00A5ACAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E59D32260515DA00A5ACAD /* AppDelegate.swift */; };
 		83E59D35260515DA00A5ACAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E59D34260515DA00A5ACAD /* SceneDelegate.swift */; };
 		83E59D3A260515DA00A5ACAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E59D38260515DA00A5ACAD /* Main.storyboard */; };
@@ -114,6 +115,7 @@
 		833816A82622674100823F0B /* Rep60sViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rep60sViewController.swift; sourceTree = "<group>"; };
 		833816AD2622678E00823F0B /* Rep100ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rep100ViewController.swift; sourceTree = "<group>"; };
 		8339DF0F26224DBF004866B2 /* ModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeViewController.swift; sourceTree = "<group>"; };
+		8356A0442627C0F200D189C1 /* SoloVersusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloVersusViewController.swift; sourceTree = "<group>"; };
 		83E59D2F260515DA00A5ACAD /* ChallengeAccepted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeAccepted.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E59D32260515DA00A5ACAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83E59D34260515DA00A5ACAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -317,7 +319,6 @@
 				83E59D38260515DA00A5ACAD /* Main.storyboard */,
 				3BEE97B426279F46005266B7 /* Block.swift */,
 				3B48CF932627A65E008ADC21 /* SecondBlock.swift */,
-				3BEE9788262798AD005266B7 /* MainFeedViewController.swift */,
 				83E59D3B260515E000A5ACAD /* Assets.xcassets */,
 				83E59D3D260515E000A5ACAD /* LaunchScreen.storyboard */,
 				83E59D40260515E000A5ACAD /* Info.plist */,
@@ -347,7 +348,6 @@
 			isa = PBXGroup;
 			children = (
 				83E59D8B2605354D00A5ACAD /* LoginViewController.swift */,
-				3BB54700261E6ED900C00816 /* SignUpViewController.swift */,
 				83E59D90260545C700A5ACAD /* HomeViewController.swift */,
 				83E59DA426056DF000A5ACAD /* WorkoutViewController.swift */,
 				833403C72605956800172A91 /* ChallengeViewController.swift */,
@@ -356,6 +356,8 @@
 				3BB54700261E6ED900C00816 /* SignUpViewController.swift */,
 				833816A82622674100823F0B /* Rep60sViewController.swift */,
 				833816AD2622678E00823F0B /* Rep100ViewController.swift */,
+				8356A0442627C0F200D189C1 /* SoloVersusViewController.swift */,
+				3BEE9788262798AD005266B7 /* MainFeedViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -660,6 +662,7 @@
 				833403D02605CBA100172A91 /* SoloWorkoutViewController.swift in Sources */,
 				833403B726058BD100172A91 /* CGImage+Extension.swift in Sources */,
 				3BEE97B526279F46005266B7 /* Block.swift in Sources */,
+				8356A0452627C0F200D189C1 /* SoloVersusViewController.swift in Sources */,
 				833816A92622674100823F0B /* Rep60sViewController.swift in Sources */,
 				833403BD26058BD100172A91 /* Pose.swift in Sources */,
 				833403B526058BD100172A91 /* GradientOverlayView.swift in Sources */,
