@@ -45,7 +45,7 @@ class MainFeedViewController: UIViewController {
     }
     
     @IBAction func shareAll(_ sender: Any) {
-        let text = "Ayo is inviting to you to join her Squat Challenge"
+        let text = "George is inviting to you to join his Squat Challenge"
         let image = UIImage(named: "logo3")
         let myWebsite = NSURL(string:"https://ChallengeAccepted.com")
          let shareAll = [text, image, myWebsite as Any]
